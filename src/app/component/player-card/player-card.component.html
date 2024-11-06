@@ -1,0 +1,12 @@
+<div id="main">
+    <div class="card">
+        <div class="card-content">
+            <h1>{{ player.name }}</h1>
+            <span class="image main">
+                <img src="img/cerf.avif" alt="Image du joueur">
+            </span>
+            <p>{{ player.description }}</p>
+            <button (click)="selectPlayer()">Sélectionner</button> <!-- Bouton qui déclenche l'événement -->
+        </div>
+    </div>
+</div>

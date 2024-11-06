@@ -1,0 +1,12 @@
+<div id="player-cards">
+    <!-- Utilisation de *ngFor pour afficher plusieurs cartes -->
+    <app-player-card *ngFor="let player of players" [player]="player" (playerSelected)="onPlayerSelected($event)">
+    </app-player-card>
+</div>
+
+<!-- Affichage du joueur sélectionné -->
+<div *ngIf="selectedPlayer">
+    <h2>Joueur sélectionné :</h2>
+    <p><strong>Name:</strong> {{ selectedPlayer.name }}</p>
+    <p><strong>Description:</strong> {{ selectedPlayer.description }}</p>
+</div>

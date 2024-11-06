@@ -1,0 +1,33 @@
+#player-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+#player-cards app-player-card {
+  margin: 10px;
+}
+
+.selected-player-info {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  max-width: 600px;
+}
+
+.selected-player-info h2 {
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.selected-player-info p {
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.selected-player-info strong {
+  color: #333;
+}
